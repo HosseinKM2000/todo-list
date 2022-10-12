@@ -1,0 +1,19 @@
+.wait{
+    width: 100%;
+    height: 657px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wait-box{
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.wait-box > h1{
+    letter-spacing: 1px;
+}

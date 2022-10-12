@@ -1,0 +1,374 @@
+@font-face {
+    font-family: Radi;
+    src: url('../font/TheRadicoolsCasualItalic_1.ttf');
+}
+@font-face {
+    font-family:Poet ;
+    src: url('../font/PoetsenOne-Regular.ttf');
+}
+@font-face {
+    font-family: Dibaj;
+    src: url('../font/Dibaj/Farsi-Num/ttf/Dibaj\ FaNum\ Bold.ttf');
+}
+@font-face{
+	font-family:Com;
+	src:url('../font/Com_com-Regular.ttf');
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.container{
+    background: linear-gradient(-45deg,#07162A, #0F2D53,#053471,#044395);
+    width: 100%;
+    min-height: 657px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Poet , Dibaj;
+    background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+h1{
+    margin: 0px !important;
+}
+
+header > div{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header > div > img{
+    width: 50px;
+    animation: swiming 10s ease-in-out infinite alternate;
+}
+
+@keyframes swiming {
+    0%{}
+    100%{transform: rotateZ(270deg);}
+}
+
+header > div > h1{
+    font-family:Radi;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 5px 0px;
+    background: linear-gradient(#303D4D 20%,#5A6471);
+}
+
+.alert-login{
+    height: 540px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.VPN{
+    margin-top: 30px;
+    color: #ffb300;
+}
+
+.alert-login h1{
+    animation: shake 2s ease-in infinite ;
+}
+
+@keyframes shake {
+    0%{transform: translateX(0px);}
+    10%{transform: translateX(5px);}
+    20%{transform: translateX(-5px);}
+    30%{transform: translateX(2px);}
+    40%{transform: translateX(-2px);}
+    50%{transform: translateX(1px);}
+    60%{transform: translateX(-1px);}
+    70%{transform: translateX(2px);}
+    80%{transform: translateX(-2px);}
+    90%{transform: translateX(5px);}
+    100%{transform: translateX(0px);}
+}
+
+.login-box{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 5px;
+    width: 20%;
+}
+
+.login-button,.unlogin-button{
+    border: none;
+    color: white;
+    height: 30px;
+    font-size: 25px;
+    font-family: Com;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: all ease-in 0.2s;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-button{
+    background-color: #10cd8b;
+    text-decoration: none;
+}
+
+.login-button:hover{
+    background-color: #0b8b5e !important;
+}
+
+.unlogin-button{
+    background-color: #E3393C;
+}
+
+.unlogin-button:hover{
+    background-color: #9D2C2E!important;
+}
+
+
+header > div > h2{
+    margin: 0px 10px 0px 0px ;
+    font-family: Radi;
+    letter-spacing: 2px;
+}
+
+.List-box{
+    display: flex;
+    width: 50%;
+    height: fit-content;
+    background-color: #bbbbbb40;
+    flex-direction: column;
+}
+
+.title{
+    display: flex;
+    width: 100%;
+    height: 60%;
+    border: solid 1px rgba(255, 255, 255, 0.322);
+    padding: 5px 0px;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    align-items:center ;
+}
+
+.done , .undone{
+    width: 20%;
+    display: flex;
+    justify-content: start;
+    padding: 0px 5px;
+    cursor: pointer;
+}
+
+.done > .text:hover{
+    text-shadow: 0px 0px 5px  #00ffad94 ;
+}
+
+.undone > .text:hover{
+    text-shadow: 0px 0px 5px #ffffff94 ;
+}
+
+.badge-green{
+    background-color: rgb(14, 124, 0);
+    width: 20%;
+    margin: 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+} 
+
+.badge-grey{
+    background-color: rgb(122, 122, 122);
+    width: 20%;
+    margin: 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.todos{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.loading-gif{
+    width: 15%;
+}
+
+
+
+@media (max-width:320px){
+
+    header > div {
+        width: 40% ;
+    }
+    
+    header > div > img{
+        width: 25%;
+    }
+
+    header > div > h1{
+        font-size: 20px;
+    }
+        
+    .login-box{
+        width: 60%;
+    }
+    
+    .login-box > .login-button{
+        width: 30% ;
+        height: 25px;
+        font-size: 15px;
+    }
+
+    .alert-login > h1{
+        font-size: 20px;
+    }
+
+    .unlogin-button{
+        font-size: 15px;
+        width: 30%;
+    }
+
+    .List-box{
+        width: 90%;
+    }
+
+    .done, .undone{
+        width: 40% ;
+    }
+    
+    }
+
+@media (min-width:321px){
+
+            header > div {
+                width: 33% ;
+            }
+            
+            header > div > img{
+                width: 30%;
+            }
+        
+            header > div > h1{
+                font-size: 20px;
+            }
+                
+            .login-box{
+                width: 60%;
+            }
+            
+            .login-box > .login-button{
+                width: 25%;
+                height: 30px;
+                font-size: 20px;
+            }
+        
+            .alert-login > h1{
+                font-size: 20px;
+            }
+
+            .unlogin-button{
+              width: 30%;
+              font-size: 17px;
+            }
+
+            .List-box{
+                width: 90%;
+            }
+        
+            .done, .undone{
+                width: 40% ;
+            }
+          
+            }
+
+@media (min-width:426px){
+
+                header > div {
+                    width: 20%;
+                }
+
+                .unlogin-button{
+                    
+                    width: 15%;
+                }
+
+                header > div > h1{
+                    font-size: 25px;
+                }
+                
+                header > div > img{
+                    width:30%;
+                }
+
+                .List-box{
+                    width: 60%;
+                }
+            
+                .done, .undone{
+                    width: 20% ;
+                }
+                .login-box > .login-button{
+                    width: 15%;
+                }
+                }
+
+@media (min-width:769px){
+
+                    header > div {
+                        width: 17%;
+                    }
+    
+                    .unlogin-button{
+                        
+                        width: 12%;
+                        font-size: 20px;
+                    }
+                    header > div > h1{
+                        font-size: 26px;
+                    }
+                    header > div > img{
+                        width: 30%;
+                    }
+
+                    .List-box{
+                        width: 50%;
+                    }
+                
+                    .done, .undone{
+                        width: 20% ;
+                    }
+                    .login-box > .login-button{
+                        width: 12%;
+                        height: 35px;
+                    }
+                    
+}

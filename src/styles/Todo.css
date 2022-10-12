@@ -1,0 +1,114 @@
+.todo{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 5px;
+   box-sizing: border-box;
+}
+
+.todo > div{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.edit , .delete , .doneUndone{
+    color: #fff;
+    width: 30%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.delete:focus{
+    transform: scale(0.9,0.9);
+    background-color: rgb(133, 0, 0);
+}
+
+.edit{
+    background-color: #aaad09;
+}
+
+.edit:focus{
+    transform: scale(0.9,0.9);
+    background-color: #757704;
+}
+
+.done_:focus{
+    transform: scale(0.9,0.9);
+}
+
+.delete{
+    background-color: rgb(175, 0, 0);
+}
+
+.delete:hover{
+    background-color: rgb(133, 0, 0);
+}
+
+.edit:hover{
+    background-color: #757704;
+}
+
+.doneUndone.done_:hover{
+    background-color: rgb(0, 138, 0) !important;
+}
+
+.doneUndone.undone_:hover{
+    background-color: rgb(156, 102, 0) !important;
+}
+
+@media (max-width:320px){
+
+    .todo > div{
+        width: 40% ;
+    }
+
+    .todo > div > button{
+        font-size: 11px;
+    }
+    
+    }
+
+
+@media (min-width:321px){
+
+
+        
+            .todo > div{
+                width: 40% ;
+            }
+            
+            .todo > div > button{
+                font-size: 13px;
+            }
+            
+            }
+
+
+@media (min-width:426px){
+
+                    .todo > div{
+                    width: 30% ;
+                }
+                
+                
+                }
+
+@media (min-width:769px){
+
+                    .todo > div{
+                        width: 25% ;
+                    }
+                    .todo > button{
+                        font-size: 17px;
+                    }
+                    
+}

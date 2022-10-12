@@ -1,0 +1,55 @@
+.main-404{
+ width: 100%;
+ height: 657px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+.box-404{
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+}
+
+.box-404 > h1{
+    color: #b92d2d;
+    text-shadow: 0px 0px 6px black;
+    animation: fontSize 1s ease-out infinite;
+}
+
+@keyframes fontSize {
+    0%{transform: scale(1);}
+    50%{transform: scale(0.9);}
+    100%{transform: scale(1);}
+}
+
+.button-404{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.button-404 > a{
+    border: none;
+    color: white;
+    height: 10%;
+    font-size: 22px;
+    font-family: cursive;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: all ease-in 0.2s;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b83333;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-right: 10px;
+}
